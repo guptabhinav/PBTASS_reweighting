@@ -16,7 +16,7 @@ INTEGER, ALLOCATABLE :: nbin(:)
 INTEGER :: i_mtd, mtd_steps, ns, ios, is, ig, i, j, i_md
 INTEGER :: md_steps, mtd_max, dum2,  i_s1, i_s2, np
 INTEGER :: w_cv, w_hill, k, t_min, t_max, index1, index2
-
+! checking change
 REAL*8,PARAMETER :: pi=4.d0*atan(1.d0)
 REAL*8, PARAMETER :: kb=8.314472e-3                                                                  ! kJ/(mol*K)
 REAL*8, PARAMETER :: kj_to_kcal=1.d0/4.214d0
@@ -36,7 +36,7 @@ open(4,file='COLVAR')
 open(20,file='ct.dat',status='unknown')
 
 
-CALL step_count(2,mtd_steps)
+CALL step_count(2,mtd_steps)••••••••
 print *, 'mtd steps from count =', mtd_steps
 rewind(2)
 
@@ -60,7 +60,7 @@ allocate(diff_s2(ns))
 allocate(dt(ns))
 allocate(num(ns))
 allocate(den(ns))
-
+••••••••
 
 read(1,*) grid_max(1:ns)
 read(1,*) grid_min(1:ns)
